@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from "../assets/108056960-planet-vector-icon-isolated-on-transparent-background-planet-logo-concept.jpg";
 import NavLink from './NavLinks';
 import {IoMdPlanet} from "react-icons/io";
 import { AiOutlineClose } from "react-icons/ai";
@@ -20,14 +19,14 @@ function Navbar() {
 
         <div className='hidden md:flex'>
             <ul className='pr-[100px]'>
-                <NavLink>
-                    Test1
+                <NavLink to="potd">
+                    Today' Picture
                 </NavLink>
-                <NavLink>
-                    Test2
+                <NavLink to="planets">
+                    Planets
                 </NavLink>
-                <NavLink>
-                    Test3
+                <NavLink to="mars">
+                    Mars
                 </NavLink>
             </ul>
         </div>
@@ -49,14 +48,14 @@ function Navbar() {
           />
 
           <ul className="pt-[60px] items-center flex flex-col gap-8">
-            <NavLink to="services" mobileMenu>
-              test1
+            <NavLink to="potd" mobileMenu>
+            Today' Picture
             </NavLink>
-            <NavLink to="products" mobileMenu>
-              test2
+            <NavLink to="planets" mobileMenu>
+              Planets
             </NavLink>
-            <NavLink to="reference" mobileMenu>
-              test3
+            <NavLink to="mars" mobileMenu>
+              Apollo 11
             </NavLink>
           </ul>
           </div>
